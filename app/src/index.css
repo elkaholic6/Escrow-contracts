@@ -4,7 +4,29 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
+.navbar {
+  display: flex;
+  padding: 0px 20px 0px 0px; 
+  justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.new-contract-container {
+  display: flex;
+  padding: 20px 80px;
+  justify-content: space-evenly;
+}
+
 .contract, .existing-contracts {
+  margin: 20px;
+  display: inline-block;
+  padding: 40px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.userRegistry-contracts, .beneficiaryRegistry-contracts, .registry-contracts {
   margin: 20px;
   display: inline-block;
   padding: 40px;
@@ -65,6 +87,93 @@ input[type="text"] {
 }
 
 .existing-contract .complete {
+  color: #5aa75a;
+  text-align: center;
+}
+
+.userEscrow-container {
+  display: flex;
+  padding: 20px 80px;
+  justify-content: space-between;
+}
+
+.userRegistry-contract ul {
+  padding: 10px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+.userRegistry-contract ul > li {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+.userRegistry-contract ul > li > div {
+  margin: 0 5px;
+}
+
+.userRegistry-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.userRegistry-contract ul > li > :nth-child(2n + 2) {
+  color: #5aa75a;
+  text-align: center;
+}
+
+.beneficiaryRegistry-contract ul {
+  padding: 10px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+.beneficiaryRegistry-contract ul > li {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+.beneficiaryRegistry-contract ul > li > div {
+  margin: 0 5px;
+}
+
+.beneficiaryRegistry-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.beneficiaryRegistry-contract ul > li > :nth-child(2n + 2) {
+  color: #5aa75a;
+  text-align: center;
+}
+
+.registry-container {
+  display: flex;
+  padding: 20px 80px;
+  justify-content: center;
+}
+
+.registry-contract ul {
+  padding: 10px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+.registry-contract ul > li {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+.registry-contract ul > li > div {
+  margin: 0 5px;
+}
+
+.registry-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.registry-contract ul > li > :nth-child(2) {
   color: #5aa75a;
   text-align: center;
 }

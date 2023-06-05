@@ -1,28 +1,17 @@
 export default function Escrow({
-  address,
-  arbiter,
-  beneficiary,
-  value,
+  initiatedEscrows,
   handleApprove,
 }) {
   return (
     <div className="existing-contract">
       <ul className="fields">
-        <li>
-          <div> Arbiter </div>
-          <div> {arbiter} </div>
-        </li>
-        <li>
-          <div> Beneficiary </div>
-          <div> {beneficiary} </div>
-        </li>
-        <li>
-          <div> Value </div>
-          <div> {value} </div>
+      <li>
+          <div> Contract Address </div>
+          <div> {initiatedEscrows} </div>
         </li>
         <div
           className="button"
-          id={address}
+          id={initiatedEscrows[0]}
           onClick={(e) => {
             e.preventDefault();
 
